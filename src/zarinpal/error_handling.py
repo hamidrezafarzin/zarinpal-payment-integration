@@ -1,6 +1,5 @@
 # error_handling.py
 
-
 class ZarinPalError(Exception):
     def __init__(self, code, fa_message):
         self.code = code
@@ -24,4 +23,7 @@ class PaymentRequestException(ZarinPalError):
 
 
 class PaymentVerifyException(ZarinPalError):
+    pass
+
+class MyPaymentException(Exception):
     pass
