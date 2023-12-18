@@ -1,5 +1,6 @@
 # error_handling.py
 
+
 class ZarinPalError(Exception):
     def __init__(self, code, fa_message):
         self.code = code
